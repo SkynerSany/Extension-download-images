@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Image Downloader",
+  "version": "1.6",
+  "description": "Download all images from elements with class 'img' as a single ZIP file or PDF.",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [{
+    "resources": ["jszip.min.js", "jspdf.umd.min.js"],
+    "matches": ["<all_urls>"]
+  }],
+  "icons": {
+    "128": "icon.png"
+  }
+}

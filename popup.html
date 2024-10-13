@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Downloader</title>
+    <style>
+        #progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        #progress-bar {
+            height: 20px;
+            width: 0;
+            background-color: #4caf50;
+        }
+        #progress-text {
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Downloader</h1>
+    <button id="download">Download Images as ZIP and PDF</button>
+    <div id="progress-container" style="display: none;">
+        <div id="progress-bar"></div>
+        <div id="progress-text">0%</div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
